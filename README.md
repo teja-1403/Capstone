@@ -12,6 +12,12 @@ This project, developed as part of my capstone work, focuses on classifying cerv
   
 4. EfficientNetB0: It is part of the EfficientNet family, which is designed to optimize both accuracy and efficiency. It uses a compound scaling method that uniformly scales the depth, width, and resolution of the network, balancing these aspects to achieve state-of-the-art performance with fewer parameters. EfficientNetB0 is the smallest model in the EfficientNet series and is known for delivering high accuracy with low computational cost, making it ideal for tasks requiring resource efficiency.
 
+5. EfficientNetB7: It is the largest and most accurate model in the EfficientNet family. Like EfficientNetB0, it uses the compound scaling method to balance network depth, width, and resolution. EfficientNetB7 achieves state-of-the-art accuracy on image classification tasks, albeit at a higher computational cost than EfficientNetB0.
+
+6. MobileNetV2: It is a lightweight CNN architecture designed for mobile and edge devices. It uses depthwise separable convolutions to reduce computation and memory requirements. MobileNetV2 introduces inverted residuals and linear bottlenecks to improve efficiency while maintaining accuracy. It is widely used for image classification and transfer learning in resource-constrained environments.
+
+7. MobileNetV3: It is an improvement over MobileNetV2, leveraging techniques such as NAS (Neural Architecture Search) to optimize for both speed and accuracy. MobileNetV3Large is designed for high-accuracy tasks, balancing resource efficiency with enhanced performance.
+   
 **Classification classes:** 📊
 1. Diskeratotic cells: They are squamous cells which undergone premature abnormal keratinization within individual cells or more often in three-dimensional clusters. They exhibit a brilliant orangeophilic cytoplasm. They are characterized by the presence of vesicular nuclei, identical to the nuclei of koilcytotic cells. In many cases there are binucleated and/or multinucleated cells.
   
@@ -40,9 +46,9 @@ The SIPaKMeD database is publicly available and it can be used for experimental 
 Plissiti, M. E., Dimitrakopoulos, P., Sfikas, G., Nikou, C., Krikoni, O., & Charchanti, A. (2018, October). Sipakmed: A new dataset for feature and image based classification of normal and pathological cervical cells in pap smear images. In 2018 25th IEEE international conference on image processing (ICIP) (pp. 3144-3148). IEEE.
 
 # Results: 📈
-The performance of the models was compared based on accuracy and macro ROC-AUC scores.
+The performance of the models was compared based on accuracy, precision, recall and f1-score.
 
-![image](https://github.com/user-attachments/assets/c90706cb-0686-4308-82b7-d5c2cec19c0c)
+
 
 
 📍 EfficientNetB0 demonstrated the best performance, achieving the highest accuracy and macro ROC-AUC scores.
